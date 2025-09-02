@@ -1,7 +1,4 @@
 import Image from "next/image";
-import first_cover from "../../public/images/first_cover.svg";
-import second_screen from "../../public/images/second_screen.svg";
-import third_screen from "../../public/images/third_screen.svg";
 import TableWrapper from "@/components/TableWrapper";
 
 export default function Home() {
@@ -10,7 +7,7 @@ export default function Home() {
       <section className="relative flex flex-col items-center">
         <div className="relative max-w-448 min-w-375 w-full h-752">
           <Image
-            src={first_cover}
+            src="/images/first_cover.svg"
             alt="첫 번째화 표지"
             fill
             unoptimized
@@ -26,12 +23,22 @@ export default function Home() {
 
       <section className="relative flex flex-col items-center">
         <div className="relative max-w-448 min-w-351 w-full h-285">
-          <Image src={second_screen} alt="두 번째 화면" fill unoptimized />
+          <Image
+            src="/images/second_screen.svg"
+            alt="두 번째 화면"
+            fill
+            unoptimized
+          />
         </div>
 
         <div className="absolute max-w-448 min-w-375 w-full">
           <div className="relative top-210 max-w-448 min-w-375 w-full h-410">
-            <Image src={third_screen} alt="세 번째 화면" fill unoptimized />
+            <Image
+              src="/images/third_screen.svg"
+              alt="세 번째 화면"
+              fill
+              unoptimized
+            />
           </div>
         </div>
 
