@@ -75,3 +75,15 @@
 :root {
   --spacing: 0.0625rem;
 }
+
+@utility text-normal-16 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@utility text-bold-20 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+}
