@@ -2,14 +2,15 @@ import Image from "next/image";
 import first_cover from "../../public/images/first_cover.svg";
 import second_screen from "../../public/images/second_screen.svg";
 import third_screen from "../../public/images/third_screen.svg";
+import TableWrapper from "@/components/TableWrapper";
 
 export default function Home() {
   return (
     <div className="flex flex-col h-screen items-center">
       <section className="relative flex flex-col items-center">
         <div className="relative max-w-448 min-w-375 w-full h-752">
-          <Image src={first_cover} alt="첫 번째화 표지" fill priority />
-          <div className="absolute bottom-44 left-60 flex flex-col items-center font-normal text-16 text-nowrap">
+          <Image src={first_cover} alt="첫 번째화 표지" fill />
+          <div className="absolute bottom-44 left-60 flex flex-col items-center font-normal text-normal-16 text-nowrap">
             <span>이제 본격적으로</span>
             <span>OO님의 사주팔자를</span>
             <span>분석해볼 차례네요.</span>
@@ -22,16 +23,18 @@ export default function Home() {
           <Image src={second_screen} alt="두 번째 화면" fill />
         </div>
 
-        <div className="absolute">
+        <div className="absolute max-w-448 min-w-375 w-full">
           <div className="relative top-210 max-w-448 min-w-375 w-full h-410">
             <Image src={third_screen} alt="세 번째 화면" fill />
           </div>
         </div>
 
-        <div className="flex flex-col items-center font-normal text-16 absolute top-260 left-40 text-nowrap">
+        <div className="flex flex-col items-center font-normal text-normal-16 absolute top-260 left-40 text-nowrap">
           <span>제가 oo님의 사주를</span>
           <span>보기 쉽게 표로 정리했어요</span>
         </div>
+
+        <TableWrapper />
       </section>
     </div>
   );
